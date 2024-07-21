@@ -1,6 +1,21 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Red Heat Weather App
+
+Welcome to the Red Heat Weather App! This application is built using React and leverages the OpenWeatherMap API to provide accurate weather information.
+
+## Features
+
+- **City Selection**: Choose your location from a list of cities with an intuitive search field that offers suggestions.
+- **Current Weather**: View the current weather conditions for your selected city, fetched directly from the API.
+- **7-Day Forecast**: Get a detailed weather forecast for the next seven days.
+
+## Getting Started
+
+To get started with the app, you'll need to install the necessary dependencies. Run the following command in your project directory:
+
+```bash
+npm install
+```
 
 ## Available Scripts
 
@@ -8,39 +23,14 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This command will start the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will automatically reload if you make any edits, and you will see any lint errors in the console.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Acknowledgements
 
-### `npm test`
+This project was inspired by a tutorial from freeCodeCamp.org. You can check out their video [here](https://www.youtube.com/watch?v=Reny0cTTv24&t=56s) and the original repository [here](https://github.com/bobangajicsm/react-weather-app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We have incorporated various elements from the tutorial, including code snippets, layout, and design solutions, while also adding our own enhancements such as formatting and conversion between Celsius and Fahrenheit.
 
-### `npm run build`
+## Keys
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The service utilizes APIs from rapidapi.com and openweathermap.org. The current project build includes test keys. If these keys expire by the time you access the project, you will need to generate your own API keys and insert them into the designated fields in the api-keys.js file.

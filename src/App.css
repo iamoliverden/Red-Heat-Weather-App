@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.search-field {
+  width: 440px;
+  padding: 20px 0;
+  margin: 0 auto; /* Center the element */
+  box-sizing: border-box; /* Include padding in the element's total width */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (max-width: 440px) {
+  .search-field, .daily-item, .accordion, .accordion__item, .weather {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+  .daily-item {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .weather-icon {
+    width: 50px;
+  }
+
+  .temperature {
+    font-size: 50px;
+  }
+
+  .parameter-row {
+    font-size: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* forecast.css */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 440px) {
+  .daily-details-grid {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* current-weather.css */
+
+@media (max-width: 440px) {
+  .weather {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
   }
 }
